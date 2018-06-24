@@ -4,6 +4,7 @@ echo $TF_INC
 TF_LIB=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_lib())')
 
 CUDA_PATH=/usr/local/cuda
+export CPLUS_INCLUDE_PATH=/usr/include/Eigen3
 
 cd hard_label_layer
 
